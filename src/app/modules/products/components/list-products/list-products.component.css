@@ -10,7 +10,6 @@
 .card:hover {
   transform: scale(1.02);
   transition: transform ease-in 0.2s;
-
 }
 .card .stock {
   color: steelblue;
@@ -38,7 +37,7 @@
   border-radius: 0rem;
 }
 .card a.btn:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 .card a.btn.btn-light {
   background: transparent;
@@ -46,16 +45,36 @@
   border-color: steelblue;
 }
 
-
+.card .porcentaje {
+  background: steelblue;
+  position: absolute;
+  top: 10px;
+  color: white;
+  left: -9px;
+  padding: 0.3rem;
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
+.card .porcentaje::before {
+    bottom: -8px;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 4px solid #918686;
+    border-top: 4px solid #918686;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
 .card a.btn.btn-primary {
   border-color: steelblue;
   background: steelblue;
   color: #f0f8ff;
 }
-.card a.btn.btn-light:hover, .card a.btn.btn-primary:hover{
-    border-color: steelblue;
-  background:white;
+.card a.btn.btn-light:hover,
+.card a.btn.btn-primary:hover {
+  border-color: steelblue;
+  background: white;
   color: steelblue;
 }
-
-
