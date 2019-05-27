@@ -1,0 +1,61 @@
+.card {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0rem;
+  border-color: #d9d2d2;
+  transform: scale(1);
+  transition: transform ease-out 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: transform ease-in 0.2s;
+
+}
+.card .stock {
+  color: steelblue;
+  font-weight: 600;
+}
+.card h5.card-title {
+  font-size: 1.1rem;
+  font-weight: 100;
+  min-height: 3.4rem;
+  max-height: 3.4rem;
+}
+.card .card-body {
+  background: #f0f8ff;
+  color: steelblue;
+}
+
+.card img.card-img-top {
+  height: 200px;
+  object-fit: scale-down;
+  -o-object-fit: scale-down;
+}
+.card a.btn {
+  width: 100%;
+  margin: 0.1rem 0rem 0.1rem 0rem;
+  border-radius: 0rem;
+}
+.card a.btn:focus {
+    box-shadow: none;
+}
+.card a.btn.btn-light {
+  background: transparent;
+  color: steelblue;
+  border-color: steelblue;
+}
+
+
+.card a.btn.btn-primary {
+  border-color: steelblue;
+  background: steelblue;
+  color: #f0f8ff;
+}
+.card a.btn.btn-light:hover, .card a.btn.btn-primary:hover{
+    border-color: steelblue;
+  background:white;
+  color: steelblue;
+}
+
+

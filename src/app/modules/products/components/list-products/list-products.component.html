@@ -1,0 +1,63 @@
+<div *ngIf="productos === null">
+  <div class="spinner-border text-primary" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
+<div *ngIf="productos !== null">
+  <div class="container" *ngIf="!productos.error">
+    <div class="row">
+      <div
+        class="col-12 col-sm-6 col-md-4 col-lg-3"
+        *ngFor="let producto of productos.data.reverse()"
+      >
+        <div class="card shadow-sm bg-white">
+          <div class="img-container">
+            <img
+              class="card-img-top"
+              src="{{
+                producto.img_product.replace(
+                  'https://',
+                  'https://s3.amazonaws.com/'
+                )
+              }}"
+              alt="Card image cap"
+            />
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">
+              <span>{{ producto.name_product }}</span>
+            </h5>
+            <div class="card-text">
+              <div class="row">
+                <div class="col-7">
+                  <div>
+                    <del>$ {{producto.retail_price}}</del>
+                  </div>
+                  <div>$ {{ producto.importclub_price }}</div>
+                </div>
+                <div class="col-5 text-right stock">
+                  stock
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="card-text">Porcentaje: {{ producto.percentage }}</div> -->
+            <div class="btn-zone">
+              <a href="{{ producto.path_product }}" class="btn btn-primary"
+                >Detalles</a
+              >
+              <a href="{{ producto.path_product }}" class="btn btn-light"
+                >Agregar a favoritos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="productos.error">
+    HAY ERROR
+  </div>
+</div>
