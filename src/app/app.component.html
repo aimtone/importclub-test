@@ -1,1 +1,95 @@
+<div class="wrapper">
+  <nav class="mb-5">
+    <div class="row">
+      <div class="col-3">
+        <img
+          src="https://s3.amazonaws.com/media.importclub.cl/logo_importclub.png" height="40px"
+        />
+      </div>
+      <div class="col-9 text-right">
+        <button (click)="openMenu()" class="btn btn-light">Menu</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="burger-menu">
+    <div class="text-center pt-4 pb-4">
+      <img
+        src="https://s3.amazonaws.com/media.importclub.cl/logo_importclub.png"
+        width="90%"
+      />
+    </div>
+    <ul>
+      <li>INICIO</li>
+      <li>CATEGORIAS</li>
+      <li>PRODUCTOS</li>
+      <li>PROMOCIONES</li>
+    </ul>
+  </div>
   <app-list-products></app-list-products>
+
+  <footer class="mt-5">
+    <div class="container">
+      <div class=" row pt-4 pb-4">
+        <div class="col-12 col-sm-4">
+          <h2>Contáctanos</h2>
+
+          <div class="form-group mt-3">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Nombre completo"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="email"
+              placeholder="Tu correo electrónico"
+            />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="tel" placeholder="Tu teléfono" />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control"></textarea>
+          </div>
+          <button class="btn btn-primary">Enviar</button>
+        </div>
+        <div class="col-12 col-sm-4">
+            <h2>Social</h2>
+          <div class="social">
+            <div class="facebook">
+              <a href="#">Facebook</a>
+            </div>
+            <div class="twitter">
+              <a href="#">Twitter</a>
+            </div>
+
+            <div class="instagram">
+              <a href="#">Instagram</a>
+            </div>
+
+            <div class="linkedin">
+              <a href="#">Linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 text-right align-text-bottom">
+          <p>Blanco Garcés 50, Estación Central, Santiago</p>
+          <p>anthonyjmedinaf@gmail.com</p>
+          <p>+56 9 5361 1215</p>
+          <img
+            class="img-fluid"
+            src="https://s3.amazonaws.com/media.importclub.cl/logo_importclub.png"
+          />
+          Import Club 2019. &copy; Todos los derechos reservados
+        </div>
+      </div>
+    </div>
+
+    <div class="subfoot">
+      Este sitio web fue realizado por <a href="#">Anthony Medina</a>
+    </div>
+  </footer>
+</div>

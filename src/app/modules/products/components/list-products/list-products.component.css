@@ -1,4 +1,8 @@
-.card {
+#productos {
+  position: relative;
+  min-height: calc(100vh - 59px);
+}
+#productos .card {
   position: relative;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -7,45 +11,44 @@
   transform: scale(1);
   transition: transform ease-out 0.2s;
 }
-.card:hover {
+#productos .card:hover {
   transform: scale(1.02);
   transition: transform ease-in 0.2s;
 }
-.card .stock {
+#productos .card .stock {
   color: steelblue;
   font-weight: 600;
 }
-.card h5.card-title {
-  font-size: 1.1rem;
-  font-weight: 100;
-  min-height: 3.4rem;
-  max-height: 3.4rem;
+#productos .card h5.card-title {
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 3rem;
+  max-height: 3rem;
 }
-.card .card-body {
+#productos .card .card-body {
   background: #f0f8ff;
   color: steelblue;
 }
 
-.card img.card-img-top {
+#productos .card img.card-img-top {
   height: 200px;
   object-fit: scale-down;
   -o-object-fit: scale-down;
 }
-.card a.btn {
+#productos .card a.btn {
   width: 100%;
   margin: 0.1rem 0rem 0.1rem 0rem;
   border-radius: 0rem;
 }
-.card a.btn:focus {
+#productos .card a.btn:focus {
   box-shadow: none;
 }
-.card a.btn.btn-light {
+#productos .card a.btn.btn-light {
   background: transparent;
   color: steelblue;
   border-color: steelblue;
 }
-
-.card .porcentaje {
+#productos .card .porcentaje {
   background: steelblue;
   position: absolute;
   top: 10px;
@@ -53,28 +56,40 @@
   left: -9px;
   padding: 0.3rem;
   border-radius: 0rem 0.25rem 0.25rem 0rem;
-  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
-.card .porcentaje::before {
-    bottom: -8px;
-    left: 0;
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-right: 4px solid #918686;
-    border-top: 4px solid #918686;
-    border-left: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+#productos .card .porcentaje::before {
+  bottom: -8px;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 4px solid #918686;
+  border-top: 4px solid #918686;
+  border-left: 4px solid transparent;
+  border-bottom: 4px solid transparent;
 }
-.card a.btn.btn-primary {
+#productos .card a.btn.btn-primary {
   border-color: steelblue;
   background: steelblue;
   color: #f0f8ff;
 }
-.card a.btn.btn-light:hover,
-.card a.btn.btn-primary:hover {
+#productos .card a.btn.btn-light:hover,
+#productos .card a.btn.btn-primary:hover {
   border-color: steelblue;
   background: white;
   color: steelblue;
+}
+#productos svg {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  fill: steelblue;
+}
+#productos .alert-warning {
+  width: 100%;
+  border-radius: 0rem;
 }
